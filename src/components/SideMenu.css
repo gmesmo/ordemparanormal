@@ -1,0 +1,18 @@
+.SideMenu {
+    position: relative;
+    top: 4rem;
+    height: calc(100vh - 4rem);
+    width: 25rem;
+    display: flex;
+    justify-content: center;
+
+    background-color: aqua;
+}
+
+.SideMenu .Side-Content {
+    display: flex;
+    height: 3rem;
+    padding: .2rem 1rem;
+    align-items: center;
+    background-color: aquamarine;
+}
