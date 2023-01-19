@@ -17,7 +17,11 @@ const SideMenu = () => {
             <div className="SideMenu">
                 <div className="Side-Content">
                     {elementos.map((elemento =>
-                        elemento.nome
+                        (<div className={elemento.nome} className="Option">
+                            {elemento.nome}
+                            <input type="checkbox"/>
+                        </div>
+                        )
                     ))}
                 </div>
             </div>
