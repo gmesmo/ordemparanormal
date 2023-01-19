@@ -20,11 +20,6 @@ const SideMenu = () => {
                 <div className="Side-Content">
                     {elementos.map((elemento =>
                         (<div className={elemento.nome} className="Option">
-                            
-
-                            {}
-
-
                             <input type="checkbox" id={elemento.nome} name={elemento.nome} value={elemento.nome}></input>
                             <label id={LabelId(elemento.nome)} for={elemento.nome}>{elemento.nome.toUpperCase()}</label>
                         </div>
