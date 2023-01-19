@@ -4,6 +4,8 @@ import './SideMenu.css'
 
 const SideMenu = () => {
     
+    var label_id = "";
+
     const [elementos, setElementos] = useState([
         {id: 1, nome: "Conhecimento",active: false  },
         {id: 2, nome: "Sangue"      ,active: false  },
@@ -20,7 +22,7 @@ const SideMenu = () => {
                         (<div className={elemento.nome} className="Option">
                             
 
-                            {var label_id = "label_"+element.nome}
+                            {label_id = "label_"+element.nome}
 
 
                             <input type="checkbox" id={elemento.nome} name={elemento.nome} value={elemento.nome}></input>
