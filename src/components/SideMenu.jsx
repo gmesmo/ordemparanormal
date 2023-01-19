@@ -18,8 +18,13 @@ const SideMenu = () => {
                 <div className="Side-Content">
                     {elementos.map((elemento =>
                         (<div className={elemento.nome} className="Option">
-                            {elemento.nome}
-                            <input type="checkbox"/> 
+                            
+
+                            {var label_id = "label_"+element.nome}
+
+
+                            <input type="checkbox" id={elemento.nome} name={elemento.nome} value={elemento.nome}></input>
+                            <label id={label_id} for={elemento.nome}>{elemento.nome.toUpperCase()}</label>
                         </div>
                         )
                     ))}
@@ -30,3 +35,6 @@ const SideMenu = () => {
 }
  
 export default SideMenu;
+
+
+
