@@ -4,7 +4,7 @@ import './SideMenu.css'
 
 const SideMenu = () => {
     
-    var label_id = "";
+    
 
     const [elementos, setElementos] = useState([
         {id: 1, nome: "Conhecimento",active: false  },
@@ -22,11 +22,11 @@ const SideMenu = () => {
                         (<div className={elemento.nome} className="Option">
                             
 
-                            {label_id = "label_"+element.nome}
+                            {}
 
 
                             <input type="checkbox" id={elemento.nome} name={elemento.nome} value={elemento.nome}></input>
-                            <label id={label_id} for={elemento.nome}>{elemento.nome.toUpperCase()}</label>
+                            <label id={LabelId(elemento.nome)} for={elemento.nome}>{elemento.nome.toUpperCase()}</label>
                         </div>
                         )
                     ))}
@@ -34,6 +34,12 @@ const SideMenu = () => {
             </div>
         </>
      );
+}
+
+function LabelId(nome) {
+    var label_id = "label_"+nome;
+
+    return label_id;
 }
  
 export default SideMenu;
